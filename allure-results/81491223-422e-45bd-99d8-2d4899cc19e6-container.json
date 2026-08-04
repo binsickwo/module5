@@ -1,1 +1,0 @@
-{"uuid": "c7f93632-854e-4ae4-bb6e-a7b59fbedbc1", "befores": [{"name": "minPrice", "status": "passed", "start": 1785864659710, "stop": 1785864659710}], "afters": [{"name": "minPrice::<lambda>", "start": 1785864660022}], "start": 1785864659710, "stop": 1785864660022}
