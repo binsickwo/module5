@@ -1,0 +1,14 @@
+[32mpytest tests/test_movies.py::TestUpdateMovie::test_update_movie_not_found[0m
+curl -X PATCH 'https://api.dev-cinescope.coconutqa.ru/movies/999999' \
+-H 'User-Agent: python-requests/2.34.2' \
+-H 'Accept-Encoding: gzip, deflate, zstd' \
+-H 'Accept: application/json' \
+-H 'Connection: keep-alive' \
+-H 'Content-Type: application/json' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZmZjcyYjhiLTYwNzEtNDZhMy1iNmM1LWJmMmNjNWY3ODcxOCIsImVtYWlsIjoiYXBpMUBnbWFpbC5jb20iLCJyb2xlcyI6WyJVU0VSIiwiQURNSU4iLCJTVVBFUl9BRE1JTiJdLCJ2ZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNzg1ODY1MTQ4LCJleHAiOjE3ODU4NjY5NDh9.jQcgDpzrF5BBTzwIZF83HV0gfRm75Kj5ggNiZUj_FZc' \
+-H 'Content-Length: 24' \
+-d '{"name": "Updated Name"}' 
+
+	RESPONSE:
+STATUS_CODE: [31m404[0m
+DATA: [31m{"message":"Фильм не найден","error":"Not Found","statusCode":404}[0m

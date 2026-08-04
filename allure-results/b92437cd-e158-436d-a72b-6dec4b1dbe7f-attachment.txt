@@ -1,0 +1,41 @@
+[32mpytest tests/test_movies.py::TestGetMovies::test_get_movies_filtered[490-738-location0-6] (setup)[0m
+curl -X POST 'https://auth.dev-cinescope.coconutqa.ru/login' \
+-H 'User-Agent: python-requests/2.34.2' \
+-H 'Accept-Encoding: gzip, deflate, zstd' \
+-H 'Accept: application/json' \
+-H 'Connection: keep-alive' \
+-H 'Content-Type: application/json' \
+-H 'Content-Length: 53' \
+-d '{"email": "api1@gmail.com", "password": "asdqwe123Q"}' 
+
+[32mpytest tests/test_movies.py::TestGetMovies::test_get_movies_filtered[490-738-location0-6] (setup)[0m
+curl -X POST 'https://auth.dev-cinescope.coconutqa.ru/user' \
+-H 'User-Agent: python-requests/2.34.2' \
+-H 'Accept-Encoding: gzip, deflate, zstd' \
+-H 'Accept: application/json' \
+-H 'Connection: keep-alive' \
+-H 'Content-Type: application/json' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZmZjcyYjhiLTYwNzEtNDZhMy1iNmM1LWJmMmNjNWY3ODcxOCIsImVtYWlsIjoiYXBpMUBnbWFpbC5jb20iLCJyb2xlcyI6WyJVU0VSIiwiQURNSU4iLCJTVVBFUl9BRE1JTiJdLCJ2ZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNzg1ODYyNjI0LCJleHAiOjE3ODU4NjQ0MjR9.Nwh4Zg6lglpIyTRu5dKdyX00xEYa5UfHBvhg-kNPkmU' \
+-H 'Cookie: refresh_token=284aa720-8a2d-4f4b-b259-72e40a459c17' \
+-H 'Content-Length: 179' \
+-d '{"email": "xrosario@example.org", "fullName": "Alexandra Shepherd", "password": "Ro84e?F>xh", "passwordRepeat": "Ro84e?F>xh", "roles": ["USER"], "verified": true, "banned": false}' 
+
+[32mpytest tests/test_movies.py::TestGetMovies::test_get_movies_filtered[490-738-location0-6] (setup)[0m
+curl -X POST 'https://auth.dev-cinescope.coconutqa.ru/login' \
+-H 'User-Agent: python-requests/2.34.2' \
+-H 'Accept-Encoding: gzip, deflate, zstd' \
+-H 'Accept: application/json' \
+-H 'Connection: keep-alive' \
+-H 'Content-Type: application/json' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZmZjcyYjhiLTYwNzEtNDZhMy1iNmM1LWJmMmNjNWY3ODcxOCIsImVtYWlsIjoiYXBpMUBnbWFpbC5jb20iLCJyb2xlcyI6WyJVU0VSIiwiQURNSU4iLCJTVVBFUl9BRE1JTiJdLCJ2ZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNzg1ODYyNjI0LCJleHAiOjE3ODU4NjQ0MjR9.Nwh4Zg6lglpIyTRu5dKdyX00xEYa5UfHBvhg-kNPkmU' \
+-H 'Cookie: refresh_token=284aa720-8a2d-4f4b-b259-72e40a459c17' \
+-H 'Content-Length: 59' \
+-d '{"email": "xrosario@example.org", "password": "Ro84e?F>xh"}'
+[32mpytest tests/test_movies.py::TestGetMovies::test_get_movies_filtered[490-738-location0-6][0m
+curl -X GET 'https://api.dev-cinescope.coconutqa.ru/movies?minPrice=490&maxPrice=738&locations=MSK&locations=SPB&genreId=6' \
+-H 'User-Agent: python-requests/2.34.2' \
+-H 'Accept-Encoding: gzip, deflate, zstd' \
+-H 'Accept: application/json' \
+-H 'Connection: keep-alive' \
+-H 'Content-Type: application/json' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjcwOGIyNTAwLTE2ZGQtNDQwMy05OTU4LWZmMzBhNjk4NDE4MyIsImVtYWlsIjoieHJvc2FyaW9AZXhhbXBsZS5vcmciLCJyb2xlcyI6WyJVU0VSIl0sInZlcmlmaWVkIjp0cnVlLCJpYXQiOjE3ODU4NjI2MjUsImV4cCI6MTc4NTg2NDQyNX0.1NpI3ni9z3QHZMX1n6gvCaZxKnOIUU29kR15lrbWElU' \

@@ -1,0 +1,45 @@
+[32mpytest tests/test_movies.py::TestGetMovies::test_get_movies_page_size_too_large (setup)[0m
+curl -X POST 'https://auth.dev-cinescope.coconutqa.ru/login' \
+-H 'User-Agent: python-requests/2.34.2' \
+-H 'Accept-Encoding: gzip, deflate, zstd' \
+-H 'Accept: application/json' \
+-H 'Connection: keep-alive' \
+-H 'Content-Type: application/json' \
+-H 'Content-Length: 53' \
+-d '{"email": "api1@gmail.com", "password": "asdqwe123Q"}' 
+
+[32mpytest tests/test_movies.py::TestGetMovies::test_get_movies_page_size_too_large (setup)[0m
+curl -X POST 'https://auth.dev-cinescope.coconutqa.ru/user' \
+-H 'User-Agent: python-requests/2.34.2' \
+-H 'Accept-Encoding: gzip, deflate, zstd' \
+-H 'Accept: application/json' \
+-H 'Connection: keep-alive' \
+-H 'Content-Type: application/json' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZmZjcyYjhiLTYwNzEtNDZhMy1iNmM1LWJmMmNjNWY3ODcxOCIsImVtYWlsIjoiYXBpMUBnbWFpbC5jb20iLCJyb2xlcyI6WyJVU0VSIiwiQURNSU4iLCJTVVBFUl9BRE1JTiJdLCJ2ZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNzg1ODYzNDQwLCJleHAiOjE3ODU4NjUyNDB9.V_Ay-xbhd-4JDNBpGiLvQWx5zFrNDp5BzRwtQC1VWDI' \
+-H 'Cookie: refresh_token=787b01ad-8a3e-4a06-82ed-7d0a733e16c5' \
+-H 'Content-Length: 173' \
+-d '{"email": "sharon60@example.net", "fullName": "Taylor Smith", "password": "qOc_DJtyA3", "passwordRepeat": "qOc_DJtyA3", "roles": ["USER"], "verified": true, "banned": false}' 
+
+[32mpytest tests/test_movies.py::TestGetMovies::test_get_movies_page_size_too_large (setup)[0m
+curl -X POST 'https://auth.dev-cinescope.coconutqa.ru/login' \
+-H 'User-Agent: python-requests/2.34.2' \
+-H 'Accept-Encoding: gzip, deflate, zstd' \
+-H 'Accept: application/json' \
+-H 'Connection: keep-alive' \
+-H 'Content-Type: application/json' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZmZjcyYjhiLTYwNzEtNDZhMy1iNmM1LWJmMmNjNWY3ODcxOCIsImVtYWlsIjoiYXBpMUBnbWFpbC5jb20iLCJyb2xlcyI6WyJVU0VSIiwiQURNSU4iLCJTVVBFUl9BRE1JTiJdLCJ2ZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNzg1ODYzNDQwLCJleHAiOjE3ODU4NjUyNDB9.V_Ay-xbhd-4JDNBpGiLvQWx5zFrNDp5BzRwtQC1VWDI' \
+-H 'Cookie: refresh_token=787b01ad-8a3e-4a06-82ed-7d0a733e16c5' \
+-H 'Content-Length: 59' \
+-d '{"email": "sharon60@example.net", "password": "qOc_DJtyA3"}'
+[32mpytest tests/test_movies.py::TestGetMovies::test_get_movies_page_size_too_large[0m
+curl -X GET 'https://api.dev-cinescope.coconutqa.ru/movies?pageSize=21' \
+-H 'User-Agent: python-requests/2.34.2' \
+-H 'Accept-Encoding: gzip, deflate, zstd' \
+-H 'Accept: application/json' \
+-H 'Connection: keep-alive' \
+-H 'Content-Type: application/json' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkMzdhN2E1LTQ3MzQtNDRjYy04NDBiLWRjZGVlZjkxYjg2ZCIsImVtYWlsIjoic2hhcm9uNjBAZXhhbXBsZS5uZXQiLCJyb2xlcyI6WyJVU0VSIl0sInZlcmlmaWVkIjp0cnVlLCJpYXQiOjE3ODU4NjM0NDAsImV4cCI6MTc4NTg2NTI0MH0.ReD1hMwFbPHuvWO2YsLd77GeWyzg0SXGDm2RU1Xs0oE' \
+
+	RESPONSE:
+STATUS_CODE: [31m400[0m
+DATA: [31m{"message":["Поле pageSize имеет максимальную величину 20"],"error":"Bad Request","statusCode":400}[0m

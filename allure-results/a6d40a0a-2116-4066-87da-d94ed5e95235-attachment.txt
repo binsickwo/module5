@@ -1,0 +1,38 @@
+[32mpytest tests/test_movies.py::TestUpdateMovie::test_update_movie_field[price] (setup)[0m
+curl -X POST 'https://api.dev-cinescope.coconutqa.ru/movies' \
+-H 'User-Agent: python-requests/2.34.2' \
+-H 'Accept-Encoding: gzip, deflate, zstd' \
+-H 'Accept: application/json' \
+-H 'Connection: keep-alive' \
+-H 'Content-Type: application/json' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZmZjcyYjhiLTYwNzEtNDZhMy1iNmM1LWJmMmNjNWY3ODcxOCIsImVtYWlsIjoiYXBpMUBnbWFpbC5jb20iLCJyb2xlcyI6WyJVU0VSIiwiQURNSU4iLCJTVVBFUl9BRE1JTiJdLCJ2ZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNzg1ODY1MTQ4LCJleHAiOjE3ODU4NjY5NDh9.jQcgDpzrF5BBTzwIZF83HV0gfRm75Kj5ggNiZUj_FZc' \
+-H 'Content-Length: 330' \
+-d '{"name": "Test Movie 1c6458ca", "description": "Recent add size piece. Research future design event. Success reach drop finally. Military agreement again series could. Subject field such or seven live he among.", "price": 643, "imageUrl": "https://picsum.photos/id/318/200/300", "location": "MSK", "published": true, "genreId": 5}'
+[32mpytest tests/test_movies.py::TestUpdateMovie::test_update_movie_field[price][0m
+curl -X PATCH 'https://api.dev-cinescope.coconutqa.ru/movies/66720' \
+-H 'User-Agent: python-requests/2.34.2' \
+-H 'Accept-Encoding: gzip, deflate, zstd' \
+-H 'Accept: application/json' \
+-H 'Connection: keep-alive' \
+-H 'Content-Type: application/json' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZmZjcyYjhiLTYwNzEtNDZhMy1iNmM1LWJmMmNjNWY3ODcxOCIsImVtYWlsIjoiYXBpMUBnbWFpbC5jb20iLCJyb2xlcyI6WyJVU0VSIiwiQURNSU4iLCJTVVBFUl9BRE1JTiJdLCJ2ZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNzg1ODY1MTQ4LCJleHAiOjE3ODU4NjY5NDh9.jQcgDpzrF5BBTzwIZF83HV0gfRm75Kj5ggNiZUj_FZc' \
+-H 'Content-Length: 14' \
+-d '{"price": 999}' 
+
+[32mpytest tests/test_movies.py::TestUpdateMovie::test_update_movie_field[price][0m
+curl -X GET 'https://api.dev-cinescope.coconutqa.ru/movies/66720' \
+-H 'User-Agent: python-requests/2.34.2' \
+-H 'Accept-Encoding: gzip, deflate, zstd' \
+-H 'Accept: application/json' \
+-H 'Connection: keep-alive' \
+-H 'Content-Type: application/json' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZmZjcyYjhiLTYwNzEtNDZhMy1iNmM1LWJmMmNjNWY3ODcxOCIsImVtYWlsIjoiYXBpMUBnbWFpbC5jb20iLCJyb2xlcyI6WyJVU0VSIiwiQURNSU4iLCJTVVBFUl9BRE1JTiJdLCJ2ZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNzg1ODY1MTQ4LCJleHAiOjE3ODU4NjY5NDh9.jQcgDpzrF5BBTzwIZF83HV0gfRm75Kj5ggNiZUj_FZc' \
+[32mpytest tests/test_movies.py::TestUpdateMovie::test_update_movie_field[price] (teardown)[0m
+curl -X DELETE 'https://api.dev-cinescope.coconutqa.ru/movies/66720' \
+-H 'User-Agent: python-requests/2.34.2' \
+-H 'Accept-Encoding: gzip, deflate, zstd' \
+-H 'Accept: application/json' \
+-H 'Connection: keep-alive' \
+-H 'Content-Type: application/json' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZmZjcyYjhiLTYwNzEtNDZhMy1iNmM1LWJmMmNjNWY3ODcxOCIsImVtYWlsIjoiYXBpMUBnbWFpbC5jb20iLCJyb2xlcyI6WyJVU0VSIiwiQURNSU4iLCJTVVBFUl9BRE1JTiJdLCJ2ZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNzg1ODY1MTQ4LCJleHAiOjE3ODU4NjY5NDh9.jQcgDpzrF5BBTzwIZF83HV0gfRm75Kj5ggNiZUj_FZc' \
+-H 'Content-Length: 0' \

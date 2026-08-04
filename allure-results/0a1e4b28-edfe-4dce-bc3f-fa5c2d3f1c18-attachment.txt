@@ -1,0 +1,14 @@
+[32mpytest tests/test_movies.py::TestCreateMovie::test_create_movie_invalid_data[invalid_location][0m
+curl -X POST 'https://api.dev-cinescope.coconutqa.ru/movies' \
+-H 'User-Agent: python-requests/2.34.2' \
+-H 'Accept-Encoding: gzip, deflate, zstd' \
+-H 'Accept: application/json' \
+-H 'Connection: keep-alive' \
+-H 'Content-Type: application/json' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZmZjcyYjhiLTYwNzEtNDZhMy1iNmM1LWJmMmNjNWY3ODcxOCIsImVtYWlsIjoiYXBpMUBnbWFpbC5jb20iLCJyb2xlcyI6WyJVU0VSIiwiQURNSU4iLCJTVVBFUl9BRE1JTiJdLCJ2ZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNzg1ODY0NjYzLCJleHAiOjE3ODU4NjY0NjN9.M8E91f74bqYNtu-8mCqvbH4b1zdMcaDikL3iUUh2nWM' \
+-H 'Content-Length: 306' \
+-d '{"name": "Test Movie 7a513c2a", "description": "Door out face development final. Health drop clear want film whom maybe. Role office popular employee visit. Whose good kid necessary.", "price": 984, "imageUrl": "https://picsum.photos/id/502/200/300", "location": "INVALID", "published": true, "genreId": 7}' 
+
+	RESPONSE:
+STATUS_CODE: [31m400[0m
+DATA: [31m{"message":["Поле location должно быть одним из: MSK, SPB"],"error":"Bad Request","statusCode":400}[0m

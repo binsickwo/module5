@@ -1,0 +1,1 @@
+{"uuid": "af69b02c-0d55-43b3-b486-56455e91fe4a", "children": ["c1be4a2d-eec0-4bdd-9560-d555b0fcc6c7"], "befores": [{"name": "movie_db_data", "status": "passed", "start": 1785865157559, "stop": 1785865157560}], "afters": [{"name": "movie_db_data::<lambda>", "start": 1785865159044}], "start": 1785865157559, "stop": 1785865159044}

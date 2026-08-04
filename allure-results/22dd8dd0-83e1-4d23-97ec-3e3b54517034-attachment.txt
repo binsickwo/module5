@@ -1,0 +1,13 @@
+[32mpytest tests/test_movies.py::TestCreateMovie::test_create_movie_without_auth[0m
+curl -X POST 'https://api.dev-cinescope.coconutqa.ru/movies' \
+-H 'User-Agent: python-requests/2.34.2' \
+-H 'Accept-Encoding: gzip, deflate, zstd' \
+-H 'Accept: application/json' \
+-H 'Connection: keep-alive' \
+-H 'Content-Type: application/json' \
+-H 'Content-Length: 338' \
+-d '{"name": "Test Movie 556e6667", "description": "Fill water light four because. Most more safe arm student base rock. Board affect lot. Forward couple lawyer. Practice special Mr example. Strategy door budget determine.", "price": 690, "imageUrl": "https://picsum.photos/id/124/200/300", "location": "MSK", "published": true, "genreId": 7}' 
+
+	RESPONSE:
+STATUS_CODE: [31m401[0m
+DATA: [31m{"message":"Unauthorized","statusCode":401}[0m

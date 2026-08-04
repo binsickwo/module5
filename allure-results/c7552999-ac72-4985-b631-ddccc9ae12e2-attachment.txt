@@ -1,0 +1,38 @@
+[32mpytest tests/test_movies.py::TestUpdateMovie::test_update_movie_field[description] (setup)[0m
+curl -X POST 'https://api.dev-cinescope.coconutqa.ru/movies' \
+-H 'User-Agent: python-requests/2.34.2' \
+-H 'Accept-Encoding: gzip, deflate, zstd' \
+-H 'Accept: application/json' \
+-H 'Connection: keep-alive' \
+-H 'Content-Type: application/json' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZmZjcyYjhiLTYwNzEtNDZhMy1iNmM1LWJmMmNjNWY3ODcxOCIsImVtYWlsIjoiYXBpMUBnbWFpbC5jb20iLCJyb2xlcyI6WyJVU0VSIiwiQURNSU4iLCJTVVBFUl9BRE1JTiJdLCJ2ZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNzg1ODY1MTQ4LCJleHAiOjE3ODU4NjY5NDh9.jQcgDpzrF5BBTzwIZF83HV0gfRm75Kj5ggNiZUj_FZc' \
+-H 'Content-Length: 356' \
+-d '{"name": "Test Movie 3c376fd2", "description": "Eye star assume seek. Painting thought throw civil. Best professional real factor black. Work yet and already themselves far. Pass three degree glass. Notice woman wonder expert would into.", "price": 597, "imageUrl": "https://picsum.photos/id/30/200/300", "location": "SPB", "published": true, "genreId": 8}'
+[32mpytest tests/test_movies.py::TestUpdateMovie::test_update_movie_field[description][0m
+curl -X PATCH 'https://api.dev-cinescope.coconutqa.ru/movies/66721' \
+-H 'User-Agent: python-requests/2.34.2' \
+-H 'Accept-Encoding: gzip, deflate, zstd' \
+-H 'Accept: application/json' \
+-H 'Connection: keep-alive' \
+-H 'Content-Type: application/json' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZmZjcyYjhiLTYwNzEtNDZhMy1iNmM1LWJmMmNjNWY3ODcxOCIsImVtYWlsIjoiYXBpMUBnbWFpbC5jb20iLCJyb2xlcyI6WyJVU0VSIiwiQURNSU4iLCJTVVBFUl9BRE1JTiJdLCJ2ZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNzg1ODY1MTQ4LCJleHAiOjE3ODU4NjY5NDh9.jQcgDpzrF5BBTzwIZF83HV0gfRm75Kj5ggNiZUj_FZc' \
+-H 'Content-Length: 47' \
+-d '{"description": "Updated description for test"}' 
+
+[32mpytest tests/test_movies.py::TestUpdateMovie::test_update_movie_field[description][0m
+curl -X GET 'https://api.dev-cinescope.coconutqa.ru/movies/66721' \
+-H 'User-Agent: python-requests/2.34.2' \
+-H 'Accept-Encoding: gzip, deflate, zstd' \
+-H 'Accept: application/json' \
+-H 'Connection: keep-alive' \
+-H 'Content-Type: application/json' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZmZjcyYjhiLTYwNzEtNDZhMy1iNmM1LWJmMmNjNWY3ODcxOCIsImVtYWlsIjoiYXBpMUBnbWFpbC5jb20iLCJyb2xlcyI6WyJVU0VSIiwiQURNSU4iLCJTVVBFUl9BRE1JTiJdLCJ2ZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNzg1ODY1MTQ4LCJleHAiOjE3ODU4NjY5NDh9.jQcgDpzrF5BBTzwIZF83HV0gfRm75Kj5ggNiZUj_FZc' \
+[32mpytest tests/test_movies.py::TestUpdateMovie::test_update_movie_field[description] (teardown)[0m
+curl -X DELETE 'https://api.dev-cinescope.coconutqa.ru/movies/66721' \
+-H 'User-Agent: python-requests/2.34.2' \
+-H 'Accept-Encoding: gzip, deflate, zstd' \
+-H 'Accept: application/json' \
+-H 'Connection: keep-alive' \
+-H 'Content-Type: application/json' \
+-H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZmZjcyYjhiLTYwNzEtNDZhMy1iNmM1LWJmMmNjNWY3ODcxOCIsImVtYWlsIjoiYXBpMUBnbWFpbC5jb20iLCJyb2xlcyI6WyJVU0VSIiwiQURNSU4iLCJTVVBFUl9BRE1JTiJdLCJ2ZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNzg1ODY1MTQ4LCJleHAiOjE3ODU4NjY5NDh9.jQcgDpzrF5BBTzwIZF83HV0gfRm75Kj5ggNiZUj_FZc' \
+-H 'Content-Length: 0' \

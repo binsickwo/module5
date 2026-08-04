@@ -1,0 +1,13 @@
+[32mpytest tests/test_movies.py::TestCreateMovie::test_create_movie_without_auth[0m
+curl -X POST 'https://api.dev-cinescope.coconutqa.ru/movies' \
+-H 'User-Agent: python-requests/2.34.2' \
+-H 'Accept-Encoding: gzip, deflate, zstd' \
+-H 'Accept: application/json' \
+-H 'Connection: keep-alive' \
+-H 'Content-Type: application/json' \
+-H 'Content-Length: 288' \
+-d '{"name": "Test Movie dd9fef90", "description": "See third board best door enter. Allow specific project this ready serve. Weight nor high understand place style kid Mr.", "price": 976, "imageUrl": "https://picsum.photos/id/847/200/300", "location": "MSK", "published": true, "genreId": 6}' 
+
+	RESPONSE:
+STATUS_CODE: [31m401[0m
+DATA: [31m{"message":"Unauthorized","statusCode":401}[0m
